@@ -8,7 +8,7 @@
     city: Blore
     job: IT
   # List of tasks
-  task:
+  tasks:
   - name: print all variables
     debug:
       msg: "Hi {{name}}, your city : {{city}}, working in {{job}}"
