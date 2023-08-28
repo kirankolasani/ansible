@@ -1,6 +1,6 @@
 # This is a multple plays
 -name: installing nginx and start
-  hosts: mongodb
+  host: mongodb
   become: yes
   tasks:
   -name: installing nginx
