@@ -1,0 +1,14 @@
+# List of plays
+- name: variables in ansible
+  hosts: mongodb
+  become: yes
+  # vars in Play level
+  vars:
+    name: Kiran
+    city: Blore
+    job: IT
+  # List of tasks
+  task:
+  - name: print all variables
+    debug:
+      msg: "Hi {{name}}, your city : {{city}}, working in {{job}}"
