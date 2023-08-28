@@ -9,5 +9,5 @@
       state: installed
   - name: starting nginx
     service:
-      name: service
+      name: nginx
       state: started
