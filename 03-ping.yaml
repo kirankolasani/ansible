@@ -1,0 +1,7 @@
+#Playbook is a list of plays
+- name: ping 
+  hosts: mongodb
+  become: yes
+  tasks:
+  - name: ping task
+    ping:
