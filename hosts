@@ -1,10 +1,10 @@
-[mongodb]
-roboshop-us-dev-db-mongodb-01.devopsaws.site
-roboshop-us-dev-db-mongodb-02.devopsaws.site
-
 
 172.31.41.48
 172.31.41.49
+
+[mongodb]
+roboshop-us-dev-db-mongodb-01.devopsaws.site
+roboshop-us-dev-db-mongodb-02.devopsaws.site
 
 [mysql]
 roboshop-us-dev-db-mysql-01.devopsaws.site
