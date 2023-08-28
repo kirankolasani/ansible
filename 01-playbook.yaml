@@ -1,13 +1,13 @@
 # This is a multple plays
--name: installing nginx and start
-  host: mongodb
+- name: installing nginx and start
+  hosts: mongodb
   become: yes
   tasks:
-  -name: installing nginx
+  - name: installing nginx
   yum:
     name: nginx
     state: installed
-  -name: starting nginx
-  yum:
+  - name: starting nginx
+  service:
     name: service
     state: started
