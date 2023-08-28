@@ -18,10 +18,10 @@ roboshop-in-dev-app-cart-02.devopsaws.site
 roboshop-in-dev-app-user-01.devopsaws.site
 roboshop-in-dev-app-user-02.devopsaws.site
 
-[db:childern]
+[db:children]
 mongodb
 mysql
 
-[app:childern]
+[app:children]
 cart
 user
