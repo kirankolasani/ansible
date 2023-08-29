@@ -1,0 +1,13 @@
+- name: checking user exist dynamically
+  hosts: localhost
+  vars_prompt:
+    - name: user
+      prompt: Enter user name
+      private: false
+  tasks:
+  - name: checking user
+    command: id {{user}}
+    register: u
+  - name: printing user
+    debug:
+      msg: "User is : {{user}}"
