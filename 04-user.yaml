@@ -15,3 +15,7 @@
   - name: printing user exit status
     debug:
       msg: "user exit status: {{u.rc}}"
+  - name: creating user if not existed
+    user:
+      name: {{user}}
+    when u.rc != 0
