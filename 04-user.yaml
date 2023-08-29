@@ -18,4 +18,4 @@
   - name: creating user if not existed
     user:
       name: {{user}}
-    when u.rc != 0
+    when: u.rc != 0
