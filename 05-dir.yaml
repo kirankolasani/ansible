@@ -3,11 +3,20 @@
   vars_prompt:
     name: dir
     prompt: Plz enter dir name
+    private: false
   tasks:
-  - name: checking dir if existed
+  - name: checking dir if exist
     command: ls -lrthd "{{dir}}"
     register: d
     ignore_errors: true
   - name: printing output
     debug:
       msg: "output is : {{d}}"
+  - name: creating dir if doesn't exist
+    command: mkdir "{{dir}}"
+    register: md
+    when: d.rc != 0
+  - name: printing dir output if created
+    debug:
+      msg: "output is : {{md}}"
+    ignore_errors: true
