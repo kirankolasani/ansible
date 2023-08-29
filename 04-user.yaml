@@ -8,6 +8,7 @@
   - name: checking user
     command: id {{user}}
     register: u
+    ignore_errors: true
   - name: printing user
     debug:
       msg: "User is : {{user}}"

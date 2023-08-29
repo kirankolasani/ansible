@@ -1,6 +1,7 @@
 
 172.31.41.48
 172.31.41.49
+localhost
 
 [mongodb]
 roboshop-us-dev-db-mongodb-01.devopsaws.site
