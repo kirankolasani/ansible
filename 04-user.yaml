@@ -12,3 +12,6 @@
   - name: printing user
     debug:
       msg: "User is : {{user}}"
+  - name: printing user exit status
+    debug:
+      msg: "user exit status: {{u.rc}}"
