@@ -1,0 +1,13 @@
+- name: checking  and creating dir if doesn't exit
+  hosts: localhost
+  vars_prompt:
+    name: dir
+    prompt: Plz enter dir name
+  tasks:
+  - name: checking dir if existed
+    command: ls -lrthd "{{dir}}"
+    register: d
+    ignore_errors: true
+  - name: printing output
+    debug:
+      msg: "output is : {{d}}"
