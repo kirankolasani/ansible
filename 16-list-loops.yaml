@@ -2,9 +2,9 @@
   hosts: localhost
   vars:
     packages:
-      mailx
-      nginx
-      tomcat
+      - mailx
+      - nginx
+      - tomcat
   tasks:
   - name: printing List 
     ansible.builtin.debug:
