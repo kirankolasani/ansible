@@ -1,0 +1,6 @@
+- name: varibles of args means passing variables at command lines
+  hosts: localhost
+  tasks:
+  - name: printing varibles args
+    ansible.builtin.debug:
+      msg: "Args passed at command line : {{COURSE}}}"
