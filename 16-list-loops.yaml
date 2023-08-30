@@ -13,4 +13,4 @@
     ansible.builtin.debug:
       msg: " package: {{item}}"
     loop:
-      "{{packages}}"
+      - "{{packages}}"
