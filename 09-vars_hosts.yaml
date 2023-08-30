@@ -1,0 +1,6 @@
+- name: varibles from inventory(hosts) file
+  hosts: local
+  tasks:
+  - name: printing variables of hosts file
+    ansible.builtin.debug:
+      msg: "Hey , here is details of DB : {{dbuser}} && pwd: {{dbpassword}}"

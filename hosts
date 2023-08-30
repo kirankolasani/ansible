@@ -3,6 +3,13 @@
 172.31.41.49
 localhost
 
+[local]
+localhost
+
+[local:vars]
+dbuser=admin
+dbpassword=admin123
+
 [mongodb]
 roboshop-us-dev-db-mongodb-01.devopsaws.site
 # roboshop-us-dev-db-mongodb-02.devopsaws.site
