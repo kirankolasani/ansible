@@ -6,11 +6,11 @@
       nginx
       tomcat
   tasks:
-  - name: printing List with loop
+  - name: printing List 
     ansible.builtin.debug:
       msg: " packages: {{packages}}"
   - name: printing List with loop
     ansible.builtin.debug:
       msg: " package: {{item}}"
     loop:
-      packages
+      "{{packages}}"
