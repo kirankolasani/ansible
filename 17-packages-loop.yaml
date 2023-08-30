@@ -1,13 +1,14 @@
 - name: installing packages
   hosts: localhost
   become: yes
-  packages:
-    - nginx
-    - postfix
-    - cyrus-sasl-plain
-    - mailx
+  vars:
+    packages:
+      - nginx
+      - postfix
+      - cyrus-sasl-plain
+      - mailx
   tasks:
-  - name: install packages
+  -name: install packages
     ansible.builtin.yum:
       name: "{{item}}"
       state: installed
