@@ -6,10 +6,10 @@
       - mailx
       - mysql
   tasks:
-  vars:
-    city: Bangalore
-    age: 33
   - name: printing task level variables along with play 
+    vars:
+      city: Bangalore
+      age: 33
     ansible.builtin.debug:
       msg: "Name is : {{Name}}, city is : {{city}} & age is : {{age}}"
   - name: printing List variables
