@@ -1,10 +1,16 @@
 # Declaring variables
-name: Kiran
+Name: Kiran
 age: 33
-city: bangalore
+city: Bangalore
 # List 
 packages:
-- mailx
-- nginx
-- mongodb
-- mysql
+  - mailx
+  - nginx
+  - mongodb
+  - mysql
+
+# Dictonary
+Numbers:
+  n1: one
+  n2: two
+

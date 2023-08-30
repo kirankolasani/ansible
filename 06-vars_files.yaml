@@ -5,9 +5,15 @@
   tasks:
   - name: printing variables from files
     ansible.builtin.debug:
-      msg: "{{name}}, your age is : {{age}} and city is {{city}}"
-      # msg: "{{name}}, and city is {{city}}"
+      msg: "{{Name}}, your age is : {{age}} and city is {{city}}"
+      # msg: "{{Name}}, and city is {{city}}"
   - name: printing List varible
     ansible.builtin.debug:
       msg: "packages list : {{packages}}"
+  - name: printing ist value from List
+    ansible.builtin.debug:
+      msg: "packages list : {{packages[0]}}"
+  - name: printing Dictonary varible
+    ansible.builtin.debug:
+      msg: "Numbers  : {{Numbers.n1}} and 2nd is : {{Numbers.n2}}"
       
