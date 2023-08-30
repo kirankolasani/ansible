@@ -2,3 +2,9 @@
 name: Kiran
 age: 33
 city: bangalore
+# List 
+packages:
+- mailx
+- nginx
+- mongodb
+- mysql

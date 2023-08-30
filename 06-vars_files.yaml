@@ -6,5 +6,8 @@
   - name: printing variables from files
     ansible.builtin.debug:
       msg: "{{name}}, your age is : {{age}} and city is {{city}}"
-      msg: "{{name}}, and city is {{city}}"
+      # msg: "{{name}}, and city is {{city}}"
+  - name: printing List varible
+    ansible.builtin.debug:
+      msg: "packages list : {{packages}}"
       
