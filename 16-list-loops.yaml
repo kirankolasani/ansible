@@ -1,0 +1,13 @@
+- name: loop conditions 
+  hosts: localhost
+  vars:
+    packages:
+      mailx
+      nginx
+      tomcat
+  tasks:
+  - name: printing List with loop
+    ansible.builtin.debug:
+      msg: " package: {{item}}"
+  loop:
+    {{packages}}
