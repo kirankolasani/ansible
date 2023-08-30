@@ -11,7 +11,8 @@
   - name: install packages
     ansible.builtin.yum:
       name: "{{item}}"
-      state: installed
+      # state: installed
+      state:  absent
     # list of string
     loop: "{{packages}}"
    
