@@ -8,9 +8,10 @@
   tasks:
   - name: printing List 
     ansible.builtin.debug:
-      msg: " packages: {{packages}}"
+      # msg: " packages: {{packages}}"
+      msg: "1st package: {{packages[0]}}"
   - name: printing List with loop
     ansible.builtin.debug:
       msg: " package: {{item}}"
-    loop:
-      - "{{packages}}"
+    loop: "{{packages}}"
+      # - "{{packages}}"
