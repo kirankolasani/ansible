@@ -8,7 +8,7 @@
       - cyrus-sasl-plain
       - mailx
   tasks:
-  -name: install packages
+  - name: install packages
     ansible.builtin.yum:
       name: "{{item}}"
       state: installed
