@@ -1,4 +1,4 @@
-- name: install packages
+- name: installing packages
   hosts: localhost
   become: yes
   packages:
@@ -7,7 +7,7 @@
     - cyrus-sasl-plain
     - mailx
   tasks:
-  - name: install package
+  - name: install packages
     ansible.builtin.yum:
       name: "{{item}}"
       state: installed
